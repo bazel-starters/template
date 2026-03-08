@@ -6,7 +6,7 @@ Install the Aspect CLI: https://docs.aspect.build/cli/install
 Then add the `init` task with
 
 ```
-aspect axl add gh:aspect-build/aspect-workflows-template
+aspect axl add gh:bazel-starters/template
 ```
 
 Finally, run `aspect init`
@@ -25,5 +25,5 @@ Install [scaffold](https://hay-kot.github.io/scaffold/) like so:
 And then create a new project like so:
 
 ```shell
-% scaffold new https://github.com/aspect-build/aspect-workflows-template
+% scaffold new https://github.com/bazel-starters/template
 ```

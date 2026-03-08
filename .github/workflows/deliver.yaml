@@ -40,16 +40,14 @@ jobs:
                 git config user.name "Marvin, the Aspect bot"
                 git commit -a -m "template"
                 echo "dir=$PWD" >> $GITHUB_OUTPUT
-            - name: Convert preset name to deploy secret name
-              id: which-secret
-              run: |
-                CLEAN="${{ matrix.preset }}"
-                CLEAN="${CLEAN//-/_}"       
-                echo "secret-name=STARTER_DEPLOY_${CLEAN^^}" >> "$GITHUB_OUTPUT"
+            - uses: actions/create-github-app-token@v1
+              id: app-token
+              with:
+                app-id: ${{ secrets.APP_ID }}
+                private-key: ${{ secrets.APP_PRIVATE_KEY }}
+                owner: bazel-starters
             - name: Force-Push to Starter repo
               working-directory: ${{ steps.scaffold.outputs.dir }}
               run: |
-                eval $(ssh-agent -s)
-                ssh-add - <<< '${{ secrets[steps.which-secret.outputs.secret-name] }}'
-                git push  --force git@github.com:bazel-starters/${{ matrix.preset }}.git HEAD:main
+                git push --force https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/bazel-starters/${{ matrix.preset }}.git HEAD:main
         

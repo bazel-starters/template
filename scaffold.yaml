@@ -25,9 +25,7 @@ messages:
     5. Add source code and run `bazel run gazelle` to create 
        additional `BUILD` files.
     
-    🌟 Star Aspect CLI on GitHub: <https://github.com/aspect-build/aspect-cli>
-    📢 Stay up to date: <https://www.linkedin.com/company/aspect-build/>
-    💬 Discuss on Bazel Slack: <https://slack.bazel.build> in the #aspect-build channel
+
 
 questions:
   - name: langs

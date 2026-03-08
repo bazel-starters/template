@@ -2,7 +2,7 @@
 
 # NB: matches the version tested in the GitHub Actions CI workflow
 SCAFFOLD_VERSION = "0.12.1"
-TEMPLATE_URL = "https://github.com/aspect-build/aspect-workflows-template"
+TEMPLATE_URL = "https://github.com/bazel-starters/template"
 
 # Platform-specific download URLs and SRI integrity hashes
 # Note: scaffold uses Darwin/Linux/Windows (capitalized) and x86_64 (not amd64)
