@@ -13,7 +13,7 @@ common --downloader_config=tools/downloader.cfg
 # avoid eager execution of symbolic macros
 common --experimental_lazy_macro_expansion_packages
 
-{{- if .Computed.javascript }}
+{{ if .Computed.javascript }}
 # for speed, passes an argument `--skipLibCheck` to *every* spawn of tsc
 common --@aspect_rules_ts//ts:skipLibCheck=always
 # use `tsc` for transpiling, even though it's slow.
