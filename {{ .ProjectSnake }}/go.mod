@@ -2,7 +2,7 @@ module example.com/{{.ProjectSnake}}
 
 go 1.24.1
 
-toolchain go1.25.6
+toolchain go1.26.3
 
 require github.com/hay-kot/scaffold v0.10.3
 tool github.com/hay-kot/scaffold
