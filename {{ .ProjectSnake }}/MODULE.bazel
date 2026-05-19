@@ -181,7 +181,7 @@ use_repo(crate, "crates")
 bazel_dep(name = "rules_ruby") # version = "0.21.1")
 git_override(
     module_name = "rules_ruby",
-    commit = "1588b1317ea1f3b9b7ac38ef283e934b5d43e680",
+    commit = "9a72547a566f16975a62ff98c1cb2b7e7b7974ec",
     remote = "https://github.com/bazel-contrib/rules_ruby.git",
 )
 ruby = use_extension("@rules_ruby//ruby:extensions.bzl", "ruby")
