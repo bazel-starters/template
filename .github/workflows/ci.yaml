@@ -42,7 +42,7 @@ jobs:
               uses: jaxxstorm/action-install-gh-release@v3.0.0
               with:
                 repo: hay-kot/scaffold
-                tag: v0.12.1
+                tag: v0.13.1
             - name: Install direnv
               run: |
                     sudo apt-get install -y direnv
