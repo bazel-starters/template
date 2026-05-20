@@ -48,7 +48,7 @@ bazel_dep(name = "bazel_jar_jar", version = "0.1.12", repo_name = None)
 {{- if .Computed.go }}
 #########################
 # Go
-bazel_dep(name = "rules_go", version = "0.59.0")
+bazel_dep(name = "rules_go", version = "0.60.0")
 
 go_sdk = use_extension("@rules_go//go:extensions.bzl", "go_sdk")
 
