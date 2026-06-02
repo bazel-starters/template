@@ -202,7 +202,7 @@ use_repo(ruby, "bundle")
 {{- if or .Computed.java .Computed.kotlin .Computed.scala }}
 #########################
 # Java and other JVM languages
-bazel_dep(name = "rules_java", version = "9.3.0")
+bazel_dep(name = "rules_java", version = "9.6.1")
 bazel_dep(name = "rules_jvm_external", version = "6.9")
 {{- end }}
 {{- if .Computed.java }}
