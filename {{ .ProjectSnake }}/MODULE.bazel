@@ -275,7 +275,7 @@ oci = use_extension("@rules_oci//oci:extensions.bzl", "oci")
 # Base image for GO Containers.
 oci.pull(
     name = "distroless_base",
-    digest = "sha256:9e9b50d2048db3741f86a48d939b4e4cc775f5889b3496439343301ff54cdba8",
+    digest = "sha256:0ebad3510af52aefe45045cc01b07564570be4feecf8d9f93d3a05d1b5f2f93b",
     image = "gcr.io/distroless/base",
     platforms = [
         "linux/amd64",
